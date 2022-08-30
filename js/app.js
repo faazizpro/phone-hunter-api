@@ -8,7 +8,8 @@ const loadPhones = async(searchText) => {
 const displayPhones = phones => {
     const phonesContainer = document.getElementById('phone-container');
     phonesContainer.textContent = '';
-
+    //Display 10 phones only
+    phones = phones.slice(0, 9);
     
     phones.forEach(phone => {
 
